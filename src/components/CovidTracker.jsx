@@ -50,18 +50,18 @@ const CovidTracker = () => {
         <CircularProgress />
       ) : (
         <>
-          <Box>
-            <TableContainer>
-              <Table sx={{border:'2px solid black' , margin:"9px"}}>
+          <Box sx={{padding:"30px"}}>
+            <TableContainer  sx={{border:'2px solid black'}}>
+              <Table>
                 <TableHead>
-                  <TableRow>
-                    <TableCell width={5}>S.No.</TableCell>
-                    <TableCell width={5}>State</TableCell>
-                    <TableCell width={5}>Confirmed</TableCell>
-                    <TableCell width={5}> Recovered</TableCell>
-                    <TableCell width={5}>Death</TableCell>
-                    <TableCell width={5}>Active</TableCell>
-                    <TableCell width={5}>Updated</TableCell>
+                  <TableRow sx={{backgroundColor:"green"}}>
+                    <TableCell width={5} sx={{color:"white"}}>S.No.</TableCell>
+                    <TableCell width={5} sx={{color:"white"}}>State</TableCell>
+                    <TableCell width={5} sx={{color:"white"}}>Confirmed</TableCell>
+                    <TableCell width={5} sx={{color:"white"}}> Recovered</TableCell>
+                    <TableCell width={5} sx={{color:"white"}}>Death</TableCell>
+                    <TableCell width={5} sx={{color:"white"}}>Active</TableCell>
+                    <TableCell width={5} sx={{color:"white"}}>Updated</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
